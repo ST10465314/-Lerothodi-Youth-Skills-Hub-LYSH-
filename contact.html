@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Lerothodi Youth Skillz Hub" />
+  <title>Contact Us | LYSH</title>
+  <link rel="icon" href="Logos/logo1.png" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="Logos/logo1.png" alt="LYSH Logo" width="120" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you! Fill out the form below and we will get back to you shortly.</p>
+
+      <form id="contactForm" aria-label="Contact form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+        <button type="submit" aria-label="Send your message">Send Message</button>
+      </form>
+
+      <!-- Confirmation Message -->
+      <div id="confirmation" style="display:none; color:green; margin-top:1rem;">
+        ✅ Thank you! Your message has been sent.
+      </div>
+
+      <!-- 🗺️ Google Maps Embed -->
+      <div class="map-container" style="margin-top:2rem;">
+        <iframe
+          src="https://www.google.com/maps/place/Bloemfontein,+South+Africa/@-29.1200074,26.2232229,66701m/data=!3m2!1e3!4b1!4m15!1m8!3m7!1s0x1e8fc56133d61419:0xedf58a554da20a47!2sFree+State,+South+Africa!3b1!8m2!3d-28.4541105!4d26.7967849!16s%2Fg%2F11f8p2_n3x!3m5!1s0x1e8fc57b9f07bf8b:0x1f16f55bb211b749!8m2!3d-29.1129237!4d26.214937!16zL20vMGM0OTk?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="LYSH Location Map">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lerothodi Youth Skillz Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
