@@ -61,7 +61,7 @@ We welcome contributions! Here’s how you can help:
 
 ## 📬 Contact
 
-- **Email:** [your-email@example.com](st10465314@rcconnect.edu.za)
+- **Email:** [st10465314@rcconnect.edu.za]
 - **Location:** Free State Province, South Africa
 
 ---
