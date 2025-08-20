@@ -2,7 +2,7 @@
 
 Lerothodi Youth Skills Hub (LYSH) is a community initiative founded in 2019 by educators and local leaders to address high youth unemployment and the lack of digital skills in the Free State Province, South Africa.
 
-Our mission is to empower young people with digital skills, entrepreneurship knowledge, and access to mentorship opportunities—helping them build brighter futures.
+Our mission is to empower young people with digital skills, entrepreneurship knowledge, and access to mentorship opportunities, helping them build brighter futures.
 
 ---
 
@@ -53,7 +53,7 @@ We welcome contributions! Here’s how you can help:
 
 1. Fork the repo
 2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
+3. Commit your changes (`git commit -m 'Add your feature`)
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
