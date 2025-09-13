@@ -3,12 +3,20 @@
 
 /* Root Variables */
 :root {
+   --success-green: #28a745;
   --dark-grey: #1c1c1c;
   --deep-blue: #003366;
   --vibrant-orange: #FF6600;
   --light-grey: #f2f2f2;
 }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 /* Global Styles */
 body {
   margin: 0;
@@ -292,6 +300,7 @@ form textarea:focus {
   font-weight: bold;
   color: green;
   margin-top: 1rem;
+  color: var(--success-green);
 }
 
 .map-container {
@@ -327,6 +336,13 @@ footer {
   margin: 0;
   padding: 0;
 }
+/* Responsive Design */
+
+@media (max-width: 500px) {
+  .hero, .programmes, .resources, .contact {
+    padding: 1rem;
+  }
+}
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -352,5 +368,7 @@ footer {
     position: relative;
   }
 }
+
+
 
 
