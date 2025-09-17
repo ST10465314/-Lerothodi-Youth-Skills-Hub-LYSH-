@@ -379,10 +379,27 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
+  .nav-links {
+    flex-direction: column;
+    background-color: var(--deep-blue);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none; /* Hidden by default */
+    padding: 1rem;
+  }
+  .nav-links.show {
+    display: flex; /* Show when .show class is present */
+  }
+   .menu-toggle {
     display: block;
   }
+ nav {
+    position: relative;
+  }
 }
- 
+
+
 
 
