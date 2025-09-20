@@ -6,6 +6,16 @@ Our mission is to empower young people with digital skills, entrepreneurship kno
 
 ---
 
+## Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#%EF%B8%8F-tech-stack)
+- [Getting Started](#-getting-started)
+- [Contribution](#-contributing)
+- [Contact](#-contact)
+
+---
+
 ## 🌟 Features
 
 - **Homepage**  
