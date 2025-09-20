@@ -378,6 +378,16 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -399,6 +409,9 @@ footer {
     position: relative;
   }
 }
+
+
+
 
 
 
