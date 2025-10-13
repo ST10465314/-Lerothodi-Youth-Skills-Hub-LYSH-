@@ -37,7 +37,7 @@ Our mission is to empower young people with digital skills, entrepreneurship kno
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Provides the site’s structure.
+- **HTML5** - Provides the site’s structure.
 - **CSS** - Styles and gives life to the site's structure.
 - **JS** - Primarily adds interactivity and dynamic behaviour to websites.
 
