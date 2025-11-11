@@ -134,6 +134,7 @@ form button {
 .button:hover,
 form button:hover {
   background-color: #e65c00;
+  animation: heartbeat 4.12s infinite;
 }
 
 /* Highlights Section */
@@ -365,6 +366,18 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: scale(1.1);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(0.95);
   }
 }
 
