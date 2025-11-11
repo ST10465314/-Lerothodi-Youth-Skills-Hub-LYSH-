@@ -72,7 +72,6 @@ nav a:hover {
   vertical-align: middle;
 }
 
-/* Menu Toggle button: hidden on desktop */
 .menu-toggle {
   background: none;
   border: none;
@@ -81,11 +80,9 @@ nav a:hover {
   cursor: pointer;
   display: none;
 }
+
   .nav-links.show {
     display: flex; /* shown on toggle */
-  }
-  .menu-toggle {
-    display: block; /* show hamburger menu */
   }
   nav {
     position: relative;
@@ -346,11 +343,18 @@ footer {
     top: 70px;
     left: 0;
     width: 100%;
-    display: none; /* hidden by default */
+    display: none;  /* HIDE nav on mobile by default */
     padding: 1rem;
     gap: 1.5rem;
   }
-  
+  .nav-links.show {
+    display: flex;  /* SHOW when .show class toggled by JS */
+  }
+  .menu-toggle {
+    display: block; /* burger button only on mobile */
+  }
+}
+
 /* Fade-in animation */
 .fade-in {
   opacity: 0;
@@ -376,7 +380,6 @@ footer {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
-
 
 
 
