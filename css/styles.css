@@ -3,7 +3,7 @@
 
 /* Root Variables */
 :root {
-   --success-green: #28a745;
+  --success-green: #28a745;
   --dark-grey: #1c1c1c;
   --deep-blue: #003366;
   --vibrant-orange: #FF6600;
@@ -13,7 +13,6 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -25,7 +24,6 @@ body {
   color: var(--light-grey);
   line-height: 1.6;
 }
-
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
   color: var(--vibrant-orange);
@@ -35,32 +33,23 @@ h1, h2, h3 {
 header {
   background-color: var(--deep-blue);
   padding: 1rem 2rem;
-} 
+}
 
- .nav-links {
-    flex-direction: column;
-    background-color: var(--deep-blue);
-    position: absolute;
-    gap: 1.5rem;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    display: none;
-    padding: 1rem;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
+/* Navigation Links — desktop style */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 nav {
-   position: relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -68,29 +57,45 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
 }
-
 nav a:hover {
   color: var(--vibrant-orange);
 }
-
-/* Fontawesome icon for navigation*/
+/* Fontawesome icon for navigation */
 .nav-links i {
   margin-right: 0.5em;
   font-size: 1.1em;
   vertical-align: middle;
 }
 
+/* Menu Toggle button: hidden on desktop */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+  .nav-links.show {
+    display: flex; /* shown on toggle */
+  }
+  .menu-toggle {
+    display: block; /* show hamburger menu */
+  }
+  nav {
+    position: relative;
+  }
+}
+
 .highlights li i {
   margin-right: 0.5em;
   color: var(--vibrant-orange);
 }
-
 
 /* Logo */
 .logo img {
@@ -104,12 +109,10 @@ nav a:hover {
   background-color: var(--deep-blue);
   color: white;
 }
-
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -141,16 +144,13 @@ form button:hover {
   padding: 2rem;
   background-color: var(--dark-grey);
 }
-
 .highlights h2 {
   margin-bottom: 1rem;
 }
-
 .highlights ul {
   list-style: none;
   padding: 0;
 }
-
 .highlights li {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
@@ -170,20 +170,17 @@ form button:hover {
   padding: 2rem;
   text-align: center;
 }
-
 .team h2{
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-
 .team-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
-
 .member {
   background-color: #002855;
   padding: 1rem;
@@ -192,17 +189,14 @@ form button:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
 .member:hover {
   transform: translateY(-5px);
 }
-
 .member img {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
 }
-
 .member p {
   margin: 0;
   font-size: 0.95rem;
@@ -214,14 +208,12 @@ form button:hover {
   padding: 3rem 2rem;
   text-align: center;
 }
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .card {
   background-color: var(--deep-blue);
   padding: 2rem;
@@ -229,17 +221,14 @@ form button:hover {
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
-
 .card img {
   width: 60px;
   margin-bottom: 1rem;
 }
-
 .card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -250,14 +239,12 @@ form button:hover {
   padding: 3rem 2rem;
   text-align: center;
 }
-
 .resources-list {
   list-style: none;
   padding: 0;
   max-width: 600px;
   margin: 0 auto;
 }
-
 .resources-list li {
   display: flex;
   align-items: center;
@@ -268,25 +255,20 @@ form button:hover {
   border-radius: 6px;
   color: white;
 }
-
 .resources-list li:hover {
   background-color: #002855;
 }
-
 .resources-list img {
   margin-right: 1rem;
 }
-
 .resources-list a {
   color: var(--vibrant-orange);
   text-decoration: none;
   font-weight: bold;
 }
-
 .resources-list a:hover {
   text-decoration: underline;
 }
-
 .file-type {
   font-size: 0.9rem;
   color: var(--light-grey);
@@ -299,7 +281,6 @@ form button:hover {
   margin: 0 auto;
   text-align: center;
 }
-
 form {
   display: grid;
   gap: 1rem;
@@ -308,11 +289,9 @@ form {
   border-radius: 8px;
   color: white;
 }
-
 form label {
   font-weight: bold;
 }
-
 form input,
 form textarea {
   padding: 0.8rem;
@@ -320,20 +299,16 @@ form textarea {
   border-radius: 4px;
   font-size: 1rem;
 }
-
 form input:focus,
 form textarea:focus {
   outline: 2px solid var(--vibrant-orange);
 }
-
 #confirmation {
   text-align: center;
   font-weight: bold;
-  color: green;
-  margin-top: 1rem;
   color: var(--success-green);
+  margin-top: 1rem;
 }
-
 .map-container {
   margin-top: 2rem;
   border-radius: 8px;
@@ -349,43 +324,20 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mobile Menu Toggle */
-.menu-toggle {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-/* Navigation Links */
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Responsive Design */
-
+/* Responsive paddings for sections */
 @media (max-width: 500px) {
   .hero, .programmes, .resources, .contact {
     padding: 1rem;
   }
 }
-
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;
   }
-
   .card-grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -394,27 +346,17 @@ footer {
     top: 70px;
     left: 0;
     width: 100%;
-    display: none; /* Hidden by default */
+    display: none; /* hidden by default */
     padding: 1rem;
+    gap: 1.5rem;
   }
-  .nav-links.show {
-    display: flex; /* Show when .show class is present */
-  }
-   .menu-toggle {
-    display: block;
-  }
- nav {
-    position: relative;
-  }
-}
-
+  
 /* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s forwards;
 }
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -424,13 +366,16 @@ footer {
 
 /* Card hover effect */
 .card {
+  background-color: var(--deep-blue);
+  padding: 2rem;
+  border-radius: 8px;
+  color: white;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
-
 
 
 
